@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sursa">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Debitis quia obcaecati perfer0722345234endis dolorem, cupiditate ut quasi odio facere numquam
+          laboriosam aspe0733 056 043riores aperiam quam error magnam ex molestias neque adipi0744035023sci praesentium!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Debitis quia obcaecati perf+40734643563erendis dolorem, cupiditate ut quasi odio facere numquam
+          laboriosam asperiores aperiam quam error magnam ex molestias neque adipisci praesentium!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Debitis quia obcaecati perferendis dolorem, cupiditate ut quasi odio facere numquam
+          laboriosam asperiores ap0733046034eriam quam 0733046034 error magnam 0725342535 ex molestias neque adipisci praesentium!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Debitis quia obcaecati perferendis dolorem, cupiditate ut quasi odio facere numquam
+          laboriosam asperiores aperiam quam error magnam ex molestias neque adipisci praesentium!
+        </p>
+        <p id="destinatie"></p>
+        <script>
+            let sursa = document.getElementById('sursa').innerHTML;
+            console.log(sursa);
+            let pattern = /[\+]?[0-9\s]{10,13}/g;
+            // let pattern = /[\+]?[0-9-\s]{10,16}/ig;
+            let result = sursa.match(pattern);
+            document.getElementById("destinatie").innerHTML = result;
+            // let result2 = sursa.matchAll(pattern);
+            // console.log(Array.from(result2));
+
+        </script>
+</body>
+</html>
