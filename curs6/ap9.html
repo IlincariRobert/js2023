@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function masinaNoua(marcaMasina, modelMasina, culoareMasina){
+            const obj= {};
+            obj.marca = marcaMasina;
+            obj.model = modelMasina;
+            obj. culoare = culoareMasina;
+
+            return obj;
+
+        }
+        function masinaNew(marcaMasina, modelMasina, culoareMasina){
+
+            this.marca = marcaMasina;
+            this.model = modelMasina;
+            this. culoare = culoareMasina;
+
+        }
+        const dacia = masinaNoua('Dacia', 'Logan', 'Alb');
+        const audi = masinaNoua('Audi', 'Q5', 'Negru');
+        
+
+        console.log(dacia);
+        console.log(audi);
+        
+
+        const bmw = new masinaNew('BMW', 'X3', 'Gri');
+        console.log(bmw);
+
+        // function masinaNoua(nume, culoare, viteza){
+        //     let obj = {};
+        //     obj.nume = nume;
+        //     obj.culoare = culoare;
+        //     obj.viteza = viteza;
+        //     obj.stop = function(){this.viteza = 0}
+        //     return obj;
+        // }
+        // console.log(masinaNoua());
+    </script>
+
+</body>
+</html>
